@@ -44,7 +44,7 @@ const ExpenseForm = (props) => {
 
     const expenseData = {
       title: enteredTitle,
-      amount: +enteredAmount,
+      amount: +enteredAmount, // Number(enteredAmount)
       date: new Date(enteredDate),
     };
     if (!!expenseData.title && !!expenseData.amount && !!expenseData.date) {
